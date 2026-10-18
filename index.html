@@ -53,7 +53,23 @@
         <a href="#"><li class="nav-link">privacy</li></a>
       </ul>
     </nav>
-    <main>
+    <main class="container">
+      <section class="hero">
+        <div class="eyebrow">your files. your control.</div>
+        <h1>every format has<br>its place.</h1>
+        <p>Convert files in seconds.<br>No account, no upload, no unnecessary steps.</p>
+      </section>
+      <section class="converter-card" aria-level="File Converter">
+        <div class="dropzone" id="dropZone" tabindex="0" role="button" aria-label="Choose files or drag and drop them here.">
+          <input type="file" id="fileInput" multiple hidden>
+          <div class="upload-icon" aria-hidden="true"><i class="ri-arrow-up-line"></i></div>
+          <h2>Drop your files here.</h2>
+          <p>or browse files on your device.</p>
+          <div class="file-hint">
+            images, json, csv, txt, html, and markdown
+          </div>
+        </div>
+      </section>
     </main>
     <footer></footer>
   </body>

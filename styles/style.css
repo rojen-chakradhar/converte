@@ -1,4 +1,99 @@
 main {
   position: relative;
+  inset: 80px 0 0;
+  width: min(100% - 40px, 920px);
+  margin: 0 auto;
   z-index: 1;
+}
+
+.hero {
+  padding: 64px 0 36px;
+  text-align: center;
+}
+
+.eyebrow {
+  font-size: var(--text-sm);
+  font-weight: var(--font-bold);
+  text-transform: capitalize;
+  letter-spacing: 0.16em;
+  color: var(--color-primary);
+}
+
+.hero h1 {
+  margin: 18px 0 14px;
+  font-family: var(--font-fredoka);
+  font-size: clamp(42px, 7dvw, 66px);
+  font-weight: var(--font-medium);
+  line-height: var(--leading-heading);
+  text-transform: capitalize;
+  letter-spacing: -3.5px;
+}
+
+.hero p {
+  max-width: 470px;
+  margin: 0 auto;
+  font-size: var(--text-lg);
+  line-height: var(--leading-relaxed);
+  color: var(--text-muted);
+}
+
+.converter-card {
+  border: var(--border-width) solid var(--color-border);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+  background: var(--color-bg);
+  overflow: hidden;
+}
+
+.dropzone {
+  min-height: 225px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+  padding: 28px;
+  border: var(--border-width) solid var(--color-border);
+  border-radius: var(--radius-sm);
+  text-align: center;
+  background: var(--color-surface);
+  transition: background var(--duration-fast) var(--ease-standard), border var(--duration-fast) var(--ease-standard);
+  cursor: pointer;
+}
+
+.dropzone:hover, .dropzone.is-dragging {
+  border: dotted var(--color-primary);
+  background: var(--color-surface-hover);
+}
+
+.upload-icon {
+  height: 48px;
+  width: 48px;
+  display: grid;
+  place-items: center;
+  font-size: var(--text-xl);
+  border: var(--border-width) solid var(--color-border);
+  border-radius: var(--radius-md);
+  color: var(--color-primary);
+  background: var(--color-surface);
+}
+
+.dropzone h2 {
+  margin: 17px 0 7px;
+  font-family: var(--font-fredoka);
+  font-size: var(--text-lg);
+  letter-spacing: -0.4px;
+}
+
+.dropzone p {
+  margin: 0;
+  font-size: var(--text-sm);
+  color: var(--text-muted);
+}
+
+.file-hint {
+  margin-top: 20px;
+  font-size: var(--text-xs);
+  text-transform: uppercase;
+  color: var(--color-text-muted);
 }

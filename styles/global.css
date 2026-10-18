@@ -30,6 +30,7 @@ body {
 }
 
 :root {
+  color-scheme: light;
   --color-bg: #FFFFFF;
   --color-surface: #F8F9FA;
   --color-surface-hover: #F1F3F5;
@@ -104,6 +105,11 @@ select {
 
 button {
   cursor: pointer;
+}
+
+button:focus-visible, select:focus-visible, .dropzone:focus-visible {
+  outline: 3px solid #b8adff;
+  outline-offset: 3px;
 }
 
 a {
