@@ -1,3 +1,4 @@
+const header = document.querySelector('header')
 const nav = document.querySelector('nav')
 const navLinks = document.querySelectorAll('li')
 const menuIcon = document.querySelector('#menuIcon')
@@ -19,7 +20,7 @@ navLinks.forEach(li => {
 function openMenu() {
   nav.style.display = "flex"
   setTimeout(() => {
-    nav.style.top = "8%"
+    nav.style.top = "80px"
   }, 1);
   menuLine1.classList.add('menu-line-1-close')
   menuLine2.classList.add('menu-line-2-close')
@@ -28,7 +29,7 @@ function openMenu() {
 }
 
 function closeMenu() {
-  nav.style.top = "-60%"
+  nav.style.top = "-50dvh"
   menuLine1.classList.remove('menu-line-1-close')
   menuLine2.classList.remove('menu-line-2-close')
   menuLine3.classList.remove('menu-line-3-close')
