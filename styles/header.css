@@ -1,0 +1,132 @@
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: var(--space-2) var(--page-gutter);
+	border-bottom: var(--border-width) solid var(--color-border);
+	background: var(--color-surface);
+	z-index: 3;
+}
+
+.logo {
+	display: flex;
+	align-items: center;
+}
+
+.wordmark {
+	font-family: var(--font-fredoka);
+	font-weight: var(--font-bold);
+	line-height: var(--leading-heading);
+	text-transform: capitalize;
+}
+
+.symbolism {
+	height: 50px;
+	width: 50px;
+	aspect-ratio: 1/1;
+	object-fit: cover;
+	object-position: center;
+}
+
+.menu-icon {
+	height: 20px;
+	width: 50px;
+	display: flex;
+	flex-direction: column;
+	align-items: end;
+	justify-content: space-between;
+	cursor: pointer;
+}
+
+.menu-line {
+	height: 3px;
+	width: 100%;
+	border-radius: var(--radius-sm);
+	background-color: var(--color-text);
+	transition:
+		width var(--duration-normal) var(--ease-standard),
+		rotate var(--duration-normal) var(--ease-standard),
+		align-self var(--duration-normal) var(--ease-standard);
+}
+
+.menu-line-3 {
+	width: 50%;
+}
+
+.menu-line-1-close,
+.menu-line-3-close {
+	width: 50%;
+	rotate: -35deg;
+}
+
+.menu-line-3 {
+	width: 50%;
+	align-self: center;
+}
+
+.menu-line-3-close {
+	width: 50%;
+	align-self: start;
+}
+
+.menu-icon:hover .menu-line-3 {
+	width: 100%;
+}
+
+.menu-icon:hover .menu-line-3-close {
+	width: 50%;
+}
+
+.menu-line-2-close {
+	width: 100%;
+	rotate: 45deg;
+}
+
+nav {
+	position: absolute;
+	top: -50%;
+	left: 0;
+	width: 100%;
+	display: none;
+	align-items: center;
+	justify-content: center;
+	gap: var(--section-space);
+	padding: var(--content-gap) var(--page-gutter);
+	text-transform: capitalize;
+	border-bottom: var(--border-width) solid var(--color-border);
+	color: var(--color-text);
+	background: var(--color-surface-hover);
+	transition: top var(--duration-slow) var(--ease-standard);
+	z-index: 2;
+}
+
+.nav-title {
+	margin-bottom: var(--space-5);
+	font-size: var(--text-3xl);
+	font-weight: var(--font-semibold);
+	line-height: var(--leading-heading);
+	color: var(--color-text-secondary);
+}
+
+.nav-links {
+	display: flex;
+	flex-direction: column;
+	gap: var(--space-4);
+}
+
+.nav-link {
+	font-size: var(--text-xl);
+	font-weight: var(--font-medium);
+	line-height: var(--leading-relaxed);
+	color: var(--color-text-muted);
+	cursor: pointer;
+}
+
+.nav-link:hover {
+	font-weight: var(--font-semibold);
+	color: var(--color-text);
+}
