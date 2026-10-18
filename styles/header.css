@@ -130,5 +130,5 @@ nav {
 
 .nav-link:hover {
 	font-weight: var(--font-semibold);
-	color: var(--color-text);
+	color: var(--color-primary);
 }
